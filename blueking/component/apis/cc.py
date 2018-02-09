@@ -132,6 +132,10 @@ class CollectionsCC(object):
             client=self.client, method='POST', path='/api/c/compapi/cc/update_host_by_app_id/',
             description=u'更新主机的gse agent状态',
         )
+        self.update_host_info = ComponentAPI(
+            client=self.client, method='POST', path='/api/c/compapi/cc/update_host_info/',
+            description=u'更新主机属性',
+        )
         self.update_host_module = ComponentAPI(
             client=self.client, method='POST', path='/api/c/compapi/cc/update_host_module/',
             description=u'修改主机模块',
@@ -152,3 +156,8 @@ class CollectionsCC(object):
             client=self.client, method='POST', path='/api/c/compapi/cc/update_set_service_status/',
             description=u'更新集群状态',
         )
+        self.enter_ip = ComponentAPI(
+            client=self.client, method='POST', path='/api/c/compapi/cc/enter_ip/',
+            description=u'添加主机',
+        )
+

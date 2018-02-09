@@ -17,4 +17,6 @@ urlpatterns = patterns(
     (r'^dev-guide/$', 'dev_guide'),
     (r'^contactus/$', 'contactus'),
     (r'^get_ip/$', 'get_ip'),
+    (r'^enter_ip/$', 'enter_ip'),
+    (r'^do_enter_ip/$', 'do_enter_ip'),
 )
