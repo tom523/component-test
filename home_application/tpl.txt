@@ -1,0 +1,12 @@
+hello, ${name}
+
+% if x == 5:
+    this is some output
+% endif
+
+
+<ul>
+% for a in ("one", "two", "three"):
+    <li>Item ${loop.index}: ${a}</li>
+% endfor
+</ul>

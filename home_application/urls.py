@@ -19,4 +19,8 @@ urlpatterns = patterns(
     (r'^get_ip/$', 'get_ip'),
     (r'^enter_ip/$', 'enter_ip'),
     (r'^do_enter_ip/$', 'do_enter_ip'),
+    (r'^sys_management/host_query/$', 'host_query'),
+    (r'^sys_management/host_update/$', 'host_update'),
+    (r'^compare/$', 'compare'),
+
 )
